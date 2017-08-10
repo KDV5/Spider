@@ -6,6 +6,10 @@ def get_html(url):
     return response.text
 
 def parse_html(html):
+    '''
+    解析页面
+    用bs找到公告的标题以及网址
+    '''
     soup = BeautifulSoup(html, 'lxml')
     td = soup.find("td", attrs={"valign":"top", "bgcolor":"#FFFFFF"}).find_next_sibling()
     table = td.find("table", attrs={"class":"font3"})
