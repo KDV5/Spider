@@ -1,5 +1,6 @@
 # Spider
-My first python code
+- My first python code
+- 使用了request、BeautifulSoup这两个库，实现一个可以抓取东大教务处网站上的公告的程序
 ## Feature
 - Not yet
 ## TODO
