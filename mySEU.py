@@ -89,6 +89,7 @@ def show_me_part(cate, month):
             break
     print("请输入类别选择：")
     cate = input()
+    
     return cate
 
 def main():
@@ -98,7 +99,7 @@ def main():
     print("类别：\n1：教务管理\n2：学籍管理\n3：国际交流\n4：课外研学\nexit：退出")
     print("请输入类别选择：")
     cate = input()
-    while cate is not 'exit':
+    while cate != 'exit':
         if choice is '2':
             print("请输入需要几个月内的公告：")
             print("1推荐2个月，2请随意操作，3推荐12个月，4推荐6个月")
